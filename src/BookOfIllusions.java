@@ -6,12 +6,14 @@
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.net.URL;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
  
 /** We’re going to make a slideshow of cool optical illusions. When the user clicks on an illusion, a new one will be loaded. **/
 
@@ -32,32 +34,35 @@ public class BookOfIllusions extends MouseAdapter {
 		// 2. make the frame visible
 		Nero.setVisible(true);
 		// 3. set the size of the frame
-		Nero.setSize(2, 2);
+		Nero.setSize(200, 200);
 		// 4. find 2 images and save them to your project’s default package
 		
 		// 5. make a variable to hold the location of your image. e.g. "illusion.jpg"
-		
+		String IMG = "download-1.jpg";
 		// 6. create a variable of type "JLabel" but don’t initialize it yet
-		JLabel Apollo = new JLabel();
+		JLabel Apollo;
 		
 		// 7. use the "loadImage..." methods below to initialize your JLabel
-		loadImageFromComputer("download-1.jpg");
+		Apollo =loadImageFromComputer(IMG);
 				// 8. add your JLabel to the frame
 		Nero.add(Apollo);
 		// 9. call the pack() method on the frame
 		Nero.pack();
 		// 10. add a mouse listener to your frame (hint: use *this*)
-		
+		Nero.addMouseListener(this);
 	}
 
 	public void mousePressed(MouseEvent e) {
 		// 11. Print "clicked!" to the console when the mouse is pressed
-		
+		JOptionPane.showMessageDialog(null, "clicked!");
 		// 12. remove everything from the frame that was added earlier
+		Nero.remove(Nero);
 		// 13. load a new image like before (this is more than one line of code)
-		
+		JLabel Apollo13;
+		String Narcissus = "download-2.jpg";
+		Apollo13=loadImageFromComputer(Narcissus);
 		// 14. pack the frame
-		
+		Nero.pack();
 	}
 
 	// [OPTIONAL] 15. goad your users with some annoying or witty pop-ups
