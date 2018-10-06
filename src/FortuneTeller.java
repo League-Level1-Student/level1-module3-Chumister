@@ -37,7 +37,7 @@ frame.addMouseListener(null);
 
     static void begin() {
    	 // 3. Welcome the user. Give them a hint for the secret location.
-
+JOptionPane.showMessageDialog(null, "Welcome stranger to Narnia");
     }
 
     @Override
@@ -59,7 +59,7 @@ frame.addMouseListener(null);
    		 // 10. Play the sound
    		sound.play();
    		 // 11. Use the pause() method below to wait until your music has finished
-   		
+   	 
    		 // 12. Insert your completed Magic 8 ball recipe (http://bit.ly/Zdrf6d) here
    	// 2. Make a variable that will hold a random number and put a random number into this variable using "
    		new Random().nextInt(4);
@@ -68,37 +68,24 @@ frame.addMouseListener(null);
    		System.out.println(4);
    		// 4. Get the user to enter a question for the 8 ball
    		JOptionPane.showInputDialog(sound);
-   		int Random;
+
+		int Random = 0;
 		// 5. If the random number is 0
    		if (Random==0) {
-			
    			JOptionPane.showMessageDialog(null, "Yes");
-   			
+			
 		}
-   		// -- tell the user "Yes"
-
-   		// 6. If the random number is 1
-if (Random==1) {
-	JOptionPane.showMessageDialog(null, "No");
-}
-   		// -- tell the user "No"
-
-   		// 7. If the random number is 
-if (Random==2) {
-	JOptionPane.showMessageDialog(null, "Maybe you should ask Google? ");
-}
-   		// -- tell the user "Maybe you should ask Google?"
-
-   		// 8. If the random number is 3
-
-   		// -- write your own answer
-
-   	}
-
-
-   	 }
-
-    }
+   		if (Random==1) {
+			JOptionPane.showMessageDialog(null, "No");
+		}
+   		if (Random==2) {
+			JOptionPane.showMessageDialog(null, "Maybe you should ask Google?");
+		}
+   		if (Random==3) {
+			JOptionPane.showMessageDialog(null, "I don't know");
+		}
+   	 }}
+   		
 
     private boolean areClose(int mouseX, int secretLocationX) {
    	 return mouseX < secretLocationX + 15 && mouseX > secretLocationX - 15;

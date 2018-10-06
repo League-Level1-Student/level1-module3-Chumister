@@ -20,7 +20,7 @@ import javax.swing.JPanel;
 
 /* Check out the Jeopardy Handout to see what the end result should look like: http://bit.ly/1bvnvd4 */
 
-public class Jeopardy implements ActionListener {
+public class Jeopardy<create> implements ActionListener {
 	private JButton firstButton;
 	private JButton secondButton;
 	private JButton thirdButton, fourthButton;
@@ -43,19 +43,18 @@ public class Jeopardy implements ActionListener {
 		// 1. Make the frame show up
 		frame.show(true);
 		// 2. Give your frame a title
-		frame.getTitle("Jeopardy");
+		frame.getTitle();
 		// 3. Create a JPanel variable to hold the header using the createHeader method
-
+JPanel Frank = new JPanel();
 		// 4. Add the header component to the quizPanel
-
+	quizPanel.add(quizPanel);
 		// 5. Add the quizPanel to the frame
-
-		// 6. Use the createButton method to set the value of firstButton
-
+Frank.add(quizPanel)	;	// 6. Use the createButton method to set the value of firstButton
 		// 7. Add the firstButton to the quizPanel
-
+quizPanel.add(firstButton);
 		// 8. Write the code to complete the createButton() method below. Check that
 		// your
+
 		// game looks like Figure 1 in the Jeopardy Handout - http://bit.ly/1bvnvd4.
 
 		// 9. Use the secondButton variable to hold a button using the createButton
