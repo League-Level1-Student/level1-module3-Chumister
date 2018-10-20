@@ -67,6 +67,7 @@ public class BookOfIllusions extends MouseAdapter {
 		String Narcissus = "down.jpg";
 		Apollo13 = loadImageFromComputer(Narcissus);
 		// 14. pack the frame
+		Nero.add(Apollo13);
 		Nero.pack();
 	}
 

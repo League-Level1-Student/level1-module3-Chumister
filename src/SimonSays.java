@@ -57,7 +57,7 @@ public class SimonSays extends KeyAdapter {
 			speak("You are correct");
 		}
 			// 18. Use the speak method to tell the user they were correct
-	
+		
 		// 19. If the keyCode doesn't match the imageIndex and "Simon didn't say..."
 
 		// 20. Increase the value of score
@@ -70,7 +70,8 @@ tries=tries+1;
 		if (tries==9) {
 			speak("your score is "+points);
 			System.exit(points);
-			JFrame.dispose();
+			Thanos.dispose();
+			showImage();
 		}
 		// 26. Tell the user their score
 
@@ -102,12 +103,16 @@ Bill.addKeyListener(null);
 		// 12. Create a new instance of Random
 Random instance = new Random();
 		// 13. Use the Random and the speak method to either say
-
 // "Simon says press this key" or "Press this key"
 
-int a = instance.nextInt(100);
+int a = instance.nextInt(2);
 		System.out.println(instance);
-		
+		if (a==0) {
+			speak("Simon says press this key");
+		}
+		else {
+			speak("Press this key");
+		}
 		// 14. Above, set the value of simonSays to true/false appropriately
 	}
 
@@ -133,13 +138,15 @@ int a = instance.nextInt(100);
 	public static void main(String[] args) throws Exception {
 		new SimonSays().makeAlbum();
 	}
-}
+
 
 /*
- * BONUS! Add a timer : ~~~ where the code starts running ~~~ timeAtStart =
- * newDate();
+ * BONUS! Add a timer : ~~~ where the code starts running 
+ timeAtStart = newDate();
  *
- * ~~~ where the code ends ~~~ Date timeAtEnd = new Date();
- * System.out.println((timeAtEnd.getTime()-timeAtStart.getTime())/1000);
- * System.exit(0);
+ Date timeAtEnd = new Date();
+ System.out.println((timeAtEnd.getTime()-timeAtStart.getTime())/1000);
+ System.exit(0);
  */
+
+} 
