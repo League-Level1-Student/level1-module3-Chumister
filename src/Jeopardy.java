@@ -61,9 +61,10 @@ quizPanel.add(firstButton);
 		// method
 
 		// 10. Add the secondButton to the quizPanel
-
+quizPanel.add(secondButton);
 		// 11. Add action listeners to the buttons (2 lines of code)
-
+firstButton.addActionListener(null);
+secondButton.addActionListener(null);
 		// 12. Write the code to complete the actionPerformed() method below
 
 		// 13. Add buttons so that you have $200, $400, $600, $800 and $1000 questions
@@ -83,7 +84,7 @@ quizPanel.add(firstButton);
 	private JButton createButton(String dollarAmount) {
 
 		// Create a new JButton
-
+JButton Yui = new JButton();
 		// Set the text of the button to the dollarAmount
 
 		// Increment the buttonCount (this should make the layout vertical)

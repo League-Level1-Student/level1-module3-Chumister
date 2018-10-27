@@ -59,7 +59,7 @@ JOptionPane.showMessageDialog(null, "Welcome stranger to Narnia");
    		 // 10. Play the sound
    		sound.play();
    		 // 11. Use the pause() method below to wait until your music has finished
-   	 
+   	 pause(secretLocationY);
    		 // 12. Insert your completed Magic 8 ball recipe (http://bit.ly/Zdrf6d) here
    	// 2. Make a variable that will hold a random number and put a random number into this variable using "
    		new Random().nextInt(4);
@@ -67,7 +67,7 @@ JOptionPane.showMessageDialog(null, "Welcome stranger to Narnia");
    		// 3. Print out this variable
    		System.out.println(4);
    		// 4. Get the user to enter a question for the 8 ball
-   		JOptionPane.showInputDialog(sound);
+   
 
 		int Random = 0;
 		// 5. If the random number is 0
