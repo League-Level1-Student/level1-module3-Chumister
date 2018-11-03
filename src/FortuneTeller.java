@@ -53,7 +53,7 @@ JOptionPane.showMessageDialog(null, "Welcome stranger to Narnia");
    	 /** If the mouse co-ordinates and secret location are close, we'll let them ask a question. */
    	 if (areClose(mouseX, secretLocationX) && areClose(mouseY, secretLocationY)) {
    		 // 8. Get the user to enter a question for the fortune teller
-   		 JOptionPane.showInputDialog("What is your fortune?");
+   		 JOptionPane.showInputDialog("What is your question?");
    		 // 9. Find a spooky sound and put it in your default package (freesound.org)
    		AudioClip sound = JApplet.newAudioClip(getClass().getResource("creepy-noise.wav"));
    		 // 10. Play the sound
@@ -68,7 +68,7 @@ JOptionPane.showMessageDialog(null, "Welcome stranger to Narnia");
    		System.out.println(4);
    		// 4. Get the user to enter a question for the 8 ball
    
-
+   		JOptionPane.showInputDialog("What is your question?");
 		int Random = 0;
 		// 5. If the random number is 0
    		if (Random==0) {
